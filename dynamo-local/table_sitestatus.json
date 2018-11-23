@@ -1,0 +1,20 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "Url",
+            "AttributeType": "S"
+        }
+    ],
+    "TableName": "SiteStatus",
+    "KeySchema": [
+        {
+            "AttributeName": "Url",
+            "KeyType": "HASH"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 5,
+        "WriteCapacityUnits": 5
+    }
+}
+
