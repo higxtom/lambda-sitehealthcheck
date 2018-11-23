@@ -1,0 +1,9 @@
+{
+    "name": "UrlStatusCheck",
+    "description": "Health status check for Web Site.",
+    "region": "us-west-2",
+    "handler": "UrlStatusCheck.lambda_handler",
+    "role": "arn:aws:iam::arn:aws:iam::626518033460:role/lambda_UrlHealthCheck",
+    "timeout": 300,
+    "memory": 128
+}
