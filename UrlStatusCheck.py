@@ -1,3 +1,5 @@
+# coding: utf-8
+
 import boto3
 import json
 import sys
@@ -86,7 +88,7 @@ def send_notice(level, name, url, status):
         site_status = "DEAD"
 
     subject = "[ServerMonitor - " + level + "] Server Status Changed."
-    sns_message = "Site: [" + name + "] status changed to " + site_status + ". Please check the servers."
+    sns_message = "Site: [" + name + "] status changed to " + site_status + ".¥n Please check the servers."
     response = sns.publish(
         TopicArn=sns_topic_arn,
         Message=sns_message,
